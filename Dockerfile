@@ -8,7 +8,7 @@ RUN set -x \
     && pip install -U \
       pyyaml \
       ansible \
-      ansible-lint \
+      ansible-lint==4.1.0 \
       ipcalc \
     && apt-get autoclean --yes \
     && find /var/lib/apt/lists/ -mindepth 1 -delete \
