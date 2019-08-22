@@ -7,7 +7,7 @@ RUN set -x \
       python-pip \
     && pip install -U \
       pyyaml \
-      ansible \
+      pytoml \
       ansible-lint==4.1.0 \
       ipcalc \
     && apt-get autoclean --yes \
