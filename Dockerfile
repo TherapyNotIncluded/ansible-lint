@@ -6,10 +6,10 @@ RUN set -x \
       python-dnspython \
       python-pip \
     && pip install -U \
-      pyyaml \
+      pyyaml==3.13 \
       pytoml \
-      ansible-lint==4.1.0 \
       ipcalc \
+      ansible-lint==4.1.1a0 \
     && apt-get autoclean --yes \
     && find /var/lib/apt/lists/ -mindepth 1 -delete \
     && find /tmp/ -mindepth 1 -delete
